@@ -10,4 +10,4 @@ jobs:
         with:
           python-version: '3.9'
       - name: Execute Test Logic
-        run: python -m unittest discover اختبار
+        run: python -m unittest discover .
