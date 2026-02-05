@@ -1,0 +1,13 @@
+name: Python Code Runner
+on: [push]
+jobs:
+  run-logic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Execute Test Logic
+        run: python -m unittest discover اختبار
