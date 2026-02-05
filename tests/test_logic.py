@@ -2,11 +2,12 @@
 Unit tests for the TaskManager logic.
 Ensures high quality and precision in task processing.
 """
-import unittest
+from src.core.logic import TaskManager
 # في المشاريع الحقيقية نقوم باستيراد الكود من src
 # هنا سنقوم بعمل اختبار بسيط للدقة
 
-class TestTaskPrecision(unittest.TestCase):
+class TestTaskLogic(unittest.TestCase):
+    
     def test_complexity_validation(self):
         # نختبر أن النظام يرفض المدخلات الخاطئة (خارج نطاق 1-10)
         complexity = 15
